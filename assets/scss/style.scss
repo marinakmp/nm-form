@@ -1,2 +1,55 @@
-@import "variables";
+@import 'variables';
+@import 'base';
+@import 'forms';
 @import 'buttons';
+
+.register-form {
+	background:url('../img/red_background.jpg');
+	display:flex;
+	flex-direction:row;
+	
+	
+	@media screen and (min-width: $laptop_small){
+		background:#fff;
+	}
+	
+	&_aside{
+		display:none;
+		flex:1 1 50%;
+		background:url('../img/beach.jpg');
+		
+		@media screen and (min-width: $laptop_small){
+			display:block;
+		}
+		&_content{
+			max-width:500px;
+			margin:50px auto;
+			padding: 0 80px;
+			box-sizing: border-box;
+		}
+		&_title{
+		
+			color:#fff;
+			font-size:80px;
+			font-weight:normal;
+			margin-bottom:0px;
+			
+			& strong{
+				display:block;
+			}
+		}
+		&_text{
+			color:#fff;
+		}
+	}
+	&_main{
+		flex:1 1 50%;
+	}
+	
+	&_content {
+		padding:40px;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+

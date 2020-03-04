@@ -1,12 +1,14 @@
 /* Buttons */
 .btn {
-	border-radius: 20px;
+	border-radius: $button_border_radius;
 	box-shadow:0px 0px 0px 0px #000;
 	color:#fff;
 	padding:4px 10px;
 	font-size:14px;
 	border:0;
 	transition:all $transition;
+	width:auto;
+	cursor:pointer;
 	
 	&:hover{
 		box-shadow:0px 0px 12px 0px #000;
@@ -19,16 +21,39 @@
 	}
 	
 	&--primary{
-		background:$primary_button_bg;
+		background:$primary_button_mobile_bg;
+		color:$primary_button_mobile_color;
 		
 		&:hover{
-			box-shadow:0px 0px 12px 0px $primary_button_bg;
+			box-shadow:0px 0px 12px 0px $primary_button_mobile_bg;
+		}
+		@media screen and (min-width: $laptop_small){
+			background:$primary_button_bg;
+			color:$primary_button_color;
+			&:hover{
+				box-shadow:0px 0px 12px 0px $primary_button_bg;
+			}
 		}
 	}
 	
+	&--social{
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		
+		@media screen and (min-width: $laptop_small){
+			width:auto;
+			height:auto;
+			& .icon{
+				top: 1px;
+				position: relative;
+				margin-right: 6px;
+			}
+		}
+	}
 	&--facebook{
 		background:$facebook_color;
-		
+
 		&:hover{
 			background:$facebook_hover_color;
 			box-shadow:0px 0px 12px 0px $facebook_hover_color;
@@ -37,7 +62,7 @@
 	
 	&--twitter{
 		background:$twitter_color;
-		
+
 		&:hover{
 			background:$twitter_hover_color;
 			box-shadow:0px 0px 12px 0px $twitter_hover_color;
@@ -46,7 +71,7 @@
 	
 	&--google{
 		background:$google_color;
-		
+
 		&:hover{
 			background:$google_hover_color;
 			box-shadow:0px 0px 12px 0px $google_hover_color;

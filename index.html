@@ -1,12 +1,69 @@
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8" />
+    <title>Assignment form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+<link rel="icon" type="image/png" sizes="32x32" href="dist/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="dist/assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="dist/assets/favicons/favicon-16x16.png">
+
 	<link rel="stylesheet" type="text/css" href="dist/assets/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/assets/icomoon/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
-<body>
-	<button class="btn btn--primary btn--large">Login</button>
-	<button class="btn btn--facebook">Facebook</button>
-	<button class="btn btn--twitter">Twitter</button>
-	<button class="btn btn--google">Google</button>
-</body>
+<body class="register-form" >
+	<h1 class="hidden">Register</h1>
+	<aside class="register-form_aside">
+		<div class="register-form_aside_content">
+			<h2 class="register-form_aside_title">Hello <strong>World</strong></h2>
+			<p  class="register-form_aside_text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+		</div>
+	</aside>
+	<main  class="register-form_main">
+		<div class="register-form_content" >
+			<h2>Register</h2>
+			<p>Don't have an account? <a href="google.com" >Create your account</a>, it takes less than a minute</p>
+			
+			<form action="/" method="post" id="register-form">
+				<div class="form-group form-inline">
+					<label for="name" class="label hidden-mobile ">Name</label>
+					<input id="name" name="name" type="text" class="form-control " placeholder="Name" value="" />
+				</div>
+				<div class="form-group form-inline">
+					<label for="email" class="label hidden-mobile ">Email ID</label>
+					<input id="email" name="email" type="email" class="form-control" placeholder="Email" value="" />
+				</div>
+				<div class="form-group form-inline">
+					<label for="phone" class="label hidden-mobile">Phone</label>
+					<input id="phone" name="phone" type="phone" class="form-control" placeholder="+ 91" value="" />
+				</div>
+				<div class="form-group form-inline">
+					<label for="password" class="label hidden-mobile">Password</label>
+					<input id="password" name="password" type="password" class="form-control" placeholder="* * * * " value="" />
+				</div>
+				<div class="form-group mg-tp-10">
+					<div class="checkbox-container">
+						<input class="hidden" type="checkbox" value="1" name="accept" id="accept" />
+						<span class="checkbox-placeholder"></span>
+						<label for="accept" >I accept terms and conditions & privacy policy</label>
+					</div>
+				</div>
+				<div class="form-buttons">
+					<button class="btn btn--primary btn--large" type="submit" >Login</button>
+				</div>
+				<div class="social-register">
+					<div class="social-register_title">Login with social media</div>
+					<div class="social-register_options">
+						<button class="btn btn--social btn--facebook"><svg class="icon icon-facebook"><use xlink:href="dist/assets/icomoon/symbol-defs.svg#icon-facebook"></use></svg><span class="hidden-mobile">Facebook</span></button>
+						<button class="btn btn--social btn--twitter"><svg class="icon icon-twitter"><use xlink:href="dist/assets/icomoon/symbol-defs.svg#icon-twitter"></use></svg><span class="hidden-mobile">Twitter</span></button>
+						<button class="btn btn--social btn--google"><svg class="icon icon-google"><use xlink:href="dist/assets/icomoon/symbol-defs.svg#icon-google"></use></svg><span class="hidden-mobile">Google</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+		<script defer src="dist/assets/icomoon/svgxuse.js"></script>
+	</body>
 </html>

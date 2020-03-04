@@ -1,2 +1,3 @@
-dist/
+dist/assets/css/
+dist/assets/js/
 node_modules/
