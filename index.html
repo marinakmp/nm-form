@@ -13,7 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
+<!-- Avoid using the body tag for styling -->
 <body class="register-form" >
+<!-- Duplicate -->
 	<h1 class="hidden">Register</h1>
 	<aside class="register-form_aside">
 		<div class="register-form_aside_content">
@@ -24,9 +26,13 @@
 	<main  class="register-form_main">
 		<div class="register-form_content" >
 			<h2>Register</h2>
+			<!-- href: either use a correct url or use a # -->
 			<p>Don't have an account? <a href="google.com" >Create your account</a>, it takes less than a minute</p>
 			
 			<form action="/" method="post" id="register-form">
+				<!-- Which elements submit your form? -->
+				<!-- Which form elements are required? -->
+				<!-- Why use an empty value? -->
 				<div class="form-group form-inline">
 					<label for="name" class="label hidden-mobile ">Name</label>
 					<input id="name" name="name" type="text" class="form-control " placeholder="Name" value="" />
@@ -37,6 +43,7 @@
 				</div>
 				<div class="form-group form-inline">
 					<label for="phone" class="label hidden-mobile">Phone</label>
+					<!-- TODO -->
 					<input id="phone" name="phone" type="phone" class="form-control" placeholder="+ 91" value="" />
 				</div>
 				<div class="form-group form-inline">
@@ -46,6 +53,7 @@
 				<div class="form-group mg-tp-10">
 					<div class="checkbox-container">
 						<input class="hidden" type="checkbox" value="1" name="accept" id="accept" />
+						<!-- Use pseudo-elements e.g. https://getbootstrap.com/docs/4.4/components/forms/#checkboxes -->
 						<span class="checkbox-placeholder"></span>
 						<label for="accept" >I accept terms and conditions & privacy policy</label>
 					</div>
@@ -54,6 +62,7 @@
 					<button class="btn btn--primary btn--large" type="submit" >Login</button>
 				</div>
 				<div class="social-register">
+					<!-- This could be a heading -->
 					<div class="social-register_title">Login with social media</div>
 					<div class="social-register_options">
 						<button class="btn btn--social btn--facebook"><svg class="icon icon-facebook"><use xlink:href="dist/assets/icomoon/symbol-defs.svg#icon-facebook"></use></svg><span class="hidden-mobile">Facebook</span></button>

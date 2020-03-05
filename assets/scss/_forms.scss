@@ -1,4 +1,5 @@
 /* Forms */
+// Why global?
 ::placeholder{
 	color:#fff;
 	@media screen and (min-width: $laptop_small){
@@ -13,6 +14,7 @@ label {
 		color:$label_desktop_color;
 	}
 }
+// Avoid margin-top when possible. form-group should always have a margin-bottom, regardless of siblings.
 .form-group + .form-group{
 	margin-top:20px;
 }
@@ -24,7 +26,7 @@ label {
 	& label{
 		font-size: 16px;
 		line-height: 16px;
-		padding: 10px 0px 10px 0px;
+		padding: 10px 0px 10px 0px; // Unit of px is redundant
 		border-bottom: 1px solid #000;
 		width: 80px;
 	}

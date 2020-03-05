@@ -3,8 +3,16 @@
 @import 'forms';
 @import 'buttons';
 
+// Media queries grouping
+// :pseudo-class, ::pseudo-element
+// Mobile first
+// Expensive CSS properties: https://medium.com/@devdevcharlie/things-nobody-ever-taught-me-about-css-5d16be8d5d0e
+// How to refactor your box-shadows on state change: https://alligator.io/css/transition-box-shadows/
+// Desktop styles: app should cover at least 100% of viewport height.
+// Aria, Contrast, Focus state
+
 .register-form {
-	background:url('../img/red_background.jpg');
+	background:url('../img/red_background.jpg');// Either use a single property or define all necessary properties
 	display:flex;
 	flex-direction:row;
 	
